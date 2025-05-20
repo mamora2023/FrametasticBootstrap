@@ -13,12 +13,113 @@
 </head>
 <body>
     <!-- Navigation   Bar     -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Bootstrap Hacks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hacks">Hacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero         Section -->
+    <section class="bg-light py-5 text-center">
+      <div class="container">
+        <img src="image.png" alt="Bootstrap Hacks" class="mb-4" style="max-width:120px;">
+        <h1 class="display-5 fw-bold">Unlock Bootstrap's Hidden Powers</h1>
+        <p class="lead">Discover smart tips, tricks, and hacks to supercharge your Bootstrap projects and build responsive sites faster!</p>
+        <a href="#hacks" class="btn btn-primary btn-lg mt-3">Explore Hacks</a>
+      </div>
+    </section>
 
     <!-- Three-Column Layout  -->
+    <section id="hacks" class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm hack-card bg-gradient-pink" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Custom Breakpoints" data-bs-content="You can add custom breakpoints in Bootstrap by editing the SCSS variables. This allows you to target any device size with precision!">
+              <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" class="card-img-top p-4" alt="Hack 1">
+              <div class="card-body">
+                <h5 class="card-title">Custom Breakpoints</h5>
+                <p class="card-text">Learn how to add your own breakpoints to make your site perfectly responsive for any device size using Bootstrap's SCSS utilities.</p>
+                <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank" class="stretched-link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm hack-card bg-gradient-blue" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Stacked Navbar on Mobile" data-bs-content="Use Bootstrap's flex-column utility on the navbar-nav to stack items vertically on mobile. Combine with responsive classes for best results!">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" class="card-img-top p-4" alt="Hack 2">
+              <div class="card-body">
+                <h5 class="card-title">Stacked Navbar on Mobile</h5>
+                <p class="card-text">Use Bootstrap's flex utilities to easily stack your navbar items vertically on mobile for a better user experience.</p>
+                <a href="https://getbootstrap.com/docs/5.3/components/navbar/#responsive-behaviors" target="_blank" class="stretched-link">See Example</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm hack-card bg-gradient-violet" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Smart Utility Classes" data-bs-content="Mix and match Bootstrap utility classes to build custom layouts and components without writing extra CSS. Try combining spacing, color, and display utilities!">
+              <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="card-img-top p-4" alt="Hack 3">
+              <div class="card-body">
+                <h5 class="card-title">Smart Utility Classes</h5>
+                <p class="card-text">Combine multiple Bootstrap utility classes to create custom components without writing extra CSS. Save time and keep your code DRY!</p>
+                <a href="https://getbootstrap.com/docs/5.3/utilities/api/" target="_blank" class="stretched-link">Explore Utilities</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn More Section -->
+    <section class="py-5 text-center" style="background: linear-gradient(90deg, #ffb6ec 0%, #a18cd1 100%); color: #fff;">
+      <div class="container">
+        <h2 class="mb-4" style="color:#fff;">Learn More About Bootstrap Hacks</h2>
+        <p class="lead">Check out these awesome resources to become a Bootstrap pro:</p>
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4 mt-4">
+          <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"><i class="fab fa-bootstrap"></i> Official Bootstrap Docs</a></li>
+          <li><a href="https://www.smashingmagazine.com/2020/01/bootstrap-hacks/" target="_blank"><i class="fas fa-lightbulb"></i> Smashing Magazine: Bootstrap Hacks</a></li>
+          <li><a href="https://bootstrapcreative.com/resources/bootstrap-hacks/" target="_blank"><i class="fas fa-magic"></i> Bootstrap Creative Hacks</a></li>
+          <li><a href="https://www.youtube.com/results?search_query=bootstrap+hacks" target="_blank"><i class="fab fa-youtube"></i> Bootstrap Hacks on YouTube</a></li>
+        </ul>
+      </div>
+    </section>
 
     <!--       Footer         -->
+    <footer id="footer" class="bg-primary text-white text-center py-4 mt-5">
+      <div class="container">
+        <div class="mb-2">
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+        <div>&copy; <span id="year"></span> Bootstrap Hacks. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Set dynamic year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+      // Enable Bootstrap popovers for hack cards
+      const popoverTriggerList = [].slice.call(document.querySelectorAll('.hack-card'));
+      popoverTriggerList.forEach(function (el) {
+        new bootstrap.Popover(el);
+      });
+    </script>
 
 </body>
 </html>
