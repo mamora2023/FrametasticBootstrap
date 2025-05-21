@@ -90,7 +90,7 @@
         <p class="lead">Check out these awesome resources to become a Bootstrap pro:</p>
         <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4 mt-4">
           <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"><i class="fab fa-bootstrap"></i> Official Bootstrap Docs</a></li>
-          <li><a href="https://www.smashingmagazine.com/2020/01/bootstrap-hacks/" target="_blank"><i class="fas fa-lightbulb"></i> Smashing Magazine: Bootstrap Hacks</a></li>
+          <li><a href="https://coding.smashingmagazine.com/category/techniques "target="_blank"><i class="fas fa-lightbulb"></i> Smashing Magazine: Bootstrap Hacks</a></li>
           <li><a href="https://bootstrapcreative.com/resources/bootstrap-hacks/" target="_blank"><i class="fas fa-magic"></i> Bootstrap Creative Hacks</a></li>
           <li><a href="https://www.youtube.com/results?search_query=bootstrap+hacks" target="_blank"><i class="fab fa-youtube"></i> Bootstrap Hacks on YouTube</a></li>
         </ul>
@@ -114,11 +114,8 @@
     <script>
       // Set dynamic year in footer
       document.getElementById('year').textContent = new Date().getFullYear();
-      // Enable Bootstrap popovers for hack cards
-      const popoverTriggerList = [].slice.call(document.querySelectorAll('.hack-card'));
-      popoverTriggerList.forEach(function (el) {
-        new bootstrap.Popover(el);
-      });
+      
+    
     </script>
 
 </body>
